@@ -1,0 +1,123 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b19">
+  <meta name="description" content="Descubra seu universo literário com o Bookverse.">
+  <title>BOOKVERSE | Seu universo literário</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">✦</span> BOOKVERSE
+    </a>
+    <span class="top-label">YOUR STORY BEGINS HERE</span>
+  </header>
+
+  <main class="app">
+    <section class="hero">
+      <span class="eyebrow">✧ UM QUIZ PARA LEITORES ✧</span>
+
+      <h1>Em qual universo<br>você <span>pertence?</span></h1>
+
+      <p>
+        Entre páginas proibidas, reinos encantados e romances
+        impossíveis, existe um universo que combina com você.
+      </p>
+
+      <div class="genre-tags">
+        <span>☾ Dark academia</span>
+        <span>♢ Fantasia</span>
+        <span>♡ Romance</span>
+        <span>◉ Suspense</span>
+      </div>
+
+      <div class="hero-decoration" aria-hidden="true">
+        <span>✧</span>
+        <span>☾</span>
+        <span>✦</span>
+      </div>
+    </section>
+
+    <section class="quiz-card" id="quiz-card">
+      <div class="quiz-header">
+        <div>
+          <span class="mini-label">SUA JORNADA</span>
+          <h2 id="step-title">O primeiro capítulo</h2>
+        </div>
+
+        <span class="counter" id="counter">01 / 07</span>
+      </div>
+
+      <div
+        class="progress-track"
+        id="progress-track"
+        role="progressbar"
+        aria-label="Progresso do quiz"
+        aria-valuemin="0"
+        aria-valuemax="7"
+        aria-valuenow="0"
+      >
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div id="question-area" aria-live="polite"></div>
+
+      <div class="quiz-footer">
+        <button id="back-btn" class="back-btn" type="button" hidden>
+          ← Voltar
+        </button>
+
+        <span class="footer-hint">
+          ESCOLHA O CAMINHO QUE TE CHAMA
+        </span>
+      </div>
+    </section>
+
+    <section class="flow-section">
+      <div class="section-heading">
+        <span class="eyebrow">MAPA DA SUA HISTÓRIA</span>
+        <h2>Seu caminho pelo <span>Bookverse</span></h2>
+        <p>
+          Cada escolha abre uma nova possibilidade no seu universo literário.
+        </p>
+      </div>
+
+      <div id="flowchart" class="flowchart">
+        <div class="flow-node start-node">
+          <span class="node-symbol">✦</span>
+          <div>
+            <strong>Sua jornada começa aqui</strong>
+            <small>Responda às perguntas para revelar os caminhos.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="result"
+      class="result-card"
+      aria-live="polite"
+      hidden
+    ></section>
+
+    <footer class="site-footer">
+      <span>✦ BOOKVERSE</span>
+      <p>Feito para quem vive mil vidas entre páginas.</p>
+    </footer>
+  </main>
+</body>
+</html>
